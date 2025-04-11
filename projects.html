@@ -1,0 +1,274 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>More Projects - Vashisth Upadhyay</title>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+    <style>
+        .projects-container {
+            padding: 100px 20px 50px;
+            background: var(--dark-bg);
+        }
+
+        .projects-header {
+            text-align: center;
+            margin-bottom: 50px;
+        }
+
+        .projects-header h1 {
+            font-size: 3rem;
+            color: var(--secondary-color);
+            margin-bottom: 20px;
+        }
+
+        .projects-header p {
+            color: var(--text-color);
+            font-size: 1.2rem;
+            max-width: 800px;
+            margin: 0 auto;
+        }
+
+        .project-slideshow {
+            max-width: 1200px;
+            margin: 0 auto;
+            position: relative;
+            overflow: hidden;
+        }
+
+        .project-slide {
+            display: none;
+            width: 100%;
+            transition: opacity 0.5s ease;
+        }
+
+        .project-slide.active {
+            display: block;
+            animation: fadeIn 0.5s ease;
+        }
+
+        .project-slide img {
+            width: 100%;
+            height: 600px;
+            object-fit: cover;
+            border-radius: 10px;
+            box-shadow: 0 5px 15px rgba(0, 0, 0, 0.3);
+        }
+
+        .slide-caption {
+            position: absolute;
+            bottom: 0;
+            left: 0;
+            right: 0;
+            background: rgba(0, 0, 0, 0.7);
+            color: white;
+            padding: 20px;
+            text-align: center;
+        }
+
+        .slide-nav {
+            position: absolute;
+            top: 50%;
+            transform: translateY(-50%);
+            width: 100%;
+            display: flex;
+            justify-content: space-between;
+            padding: 0 20px;
+        }
+
+        .slide-nav button {
+            background: rgba(0, 0, 0, 0.5);
+            color: white;
+            border: none;
+            padding: 15px;
+            border-radius: 50%;
+            cursor: pointer;
+            transition: background 0.3s ease;
+        }
+
+        .slide-nav button:hover {
+            background: rgba(0, 0, 0, 0.8);
+        }
+
+        .slide-dots {
+            text-align: center;
+            margin-top: 20px;
+        }
+
+        .dot {
+            display: inline-block;
+            width: 12px;
+            height: 12px;
+            background: #ccc;
+            border-radius: 50%;
+            margin: 0 5px;
+            cursor: pointer;
+            transition: background 0.3s ease;
+        }
+
+        .dot.active {
+            background: var(--secondary-color);
+        }
+
+        @keyframes fadeIn {
+            from { opacity: 0; }
+            to { opacity: 1; }
+        }
+
+        @media (max-width: 768px) {
+            .project-slide img {
+                height: 400px;
+            }
+
+            .projects-header h1 {
+                font-size: 2.5rem;
+            }
+        }
+    </style>
+</head>
+<body>
+    <nav class="navbar">
+        <div class="nav-content">
+            <div class="logo">VU</div>
+            <div class="menu-toggle">
+                <i class="fas fa-bars"></i>
+            </div>
+            <ul class="nav-links">
+                <li><a href="index.html">Home</a></li>
+                <li><a href="index.html#about">About</a></li>
+                <li><a href="index.html#portfolio">Portfolio</a></li>
+                <li><a href="index.html#gallery">Gallery</a></li>
+                <li><a href="index.html#contact">Contact</a></li>
+            </ul>
+        </div>
+    </nav>
+
+    <div class="projects-container">
+        <div class="projects-header">
+            <h1>More Projects</h1>
+            <p>Explore my latest theatre productions and creative works</p>
+        </div>
+
+        <div class="project-slideshow">
+            <div class="project-slide active">
+                <img src="back.jpg" alt="Theatre Production">
+                <div class="slide-caption">
+                    <h3>Production Title 1</h3>
+                    <p>Year: 2024</p>
+                </div>
+            </div>
+            <div class="project-slide">
+                <img src="backkk.jpg" alt="Theatre Production">
+                <div class="slide-caption">
+                    <h3>Production Title 2</h3>
+                    <p>Year: 2023</p>
+                </div>
+            </div>
+            <div class="project-slide">
+                <img src="ba.jpg" alt="Theatre Production">
+                <div class="slide-caption">
+                    <h3>Production Title 3</h3>
+                    <p>Year: 2023</p>
+                </div>
+            </div>
+            <div class="project-slide">
+                <img src="ew.jpg" alt="Theatre Production">
+                <div class="slide-caption">
+                    <h3>Production Title 4</h3>
+                    <p>Year: 2023</p>
+                </div>
+            </div>
+            <div class="project-slide">
+                <img src="bakk3.jpg" alt="Theatre Production">
+                <div class="slide-caption">
+                    <h3>Production Title 5</h3>
+                    <p>Year: 2022</p>
+                </div>
+            </div>
+            <div class="project-slide">
+                <img src="sc1.jpg" alt="Theatre Production">
+                <div class="slide-caption">
+                    <h3>Production Title 6</h3>
+                    <p>Year: 2022</p>
+                </div>
+            </div>
+            <div class="project-slide">
+                <img src="sc2.jpg" alt="Theatre Production">
+                <div class="slide-caption">
+                    <h3>Production Title 7</h3>
+                    <p>Year: 2022</p>
+                </div>
+            </div>
+            <div class="project-slide">
+                <img src="ba1.jpg" alt="Theatre Production">
+                <div class="slide-caption">
+                    <h3>Production Title 8</h3>
+                    <p>Year: 2021</p>
+                </div>
+            </div>
+            <div class="project-slide">
+                <img src="price.jpg" alt="Theatre Production">
+                <div class="slide-caption">
+                    <h3>Production Title 9</h3>
+                    <p>Year: 2021</p>
+                </div>
+            </div>
+            <div class="project-slide">
+                <img src="pla.jpg" alt="Theatre Production">
+                <div class="slide-caption">
+                    <h3>Production Title 10</h3>
+                    <p>Year: 2021</p>
+                </div>
+            </div>
+
+            <div class="slide-nav">
+                <button class="prev-btn"><i class="fas fa-chevron-left"></i></button>
+                <button class="next-btn"><i class="fas fa-chevron-right"></i></button>
+            </div>
+        </div>
+
+        <div class="slide-dots"></div>
+    </div>
+
+    <script>
+        document.addEventListener('DOMContentLoaded', function() {
+            const slides = document.querySelectorAll('.project-slide');
+            const dotsContainer = document.querySelector('.slide-dots');
+            let currentSlide = 0;
+
+            // Create dots
+            slides.forEach((_, index) => {
+                const dot = document.createElement('span');
+                dot.classList.add('dot');
+                if (index === 0) dot.classList.add('active');
+                dot.addEventListener('click', () => goToSlide(index));
+                dotsContainer.appendChild(dot);
+            });
+
+            const dots = document.querySelectorAll('.dot');
+
+            function goToSlide(n) {
+                slides[currentSlide].classList.remove('active');
+                dots[currentSlide].classList.remove('active');
+                currentSlide = (n + slides.length) % slides.length;
+                slides[currentSlide].classList.add('active');
+                dots[currentSlide].classList.add('active');
+            }
+
+            document.querySelector('.prev-btn').addEventListener('click', () => {
+                goToSlide(currentSlide - 1);
+            });
+
+            document.querySelector('.next-btn').addEventListener('click', () => {
+                goToSlide(currentSlide + 1);
+            });
+
+            // Auto slide
+            setInterval(() => {
+                goToSlide(currentSlide + 1);
+            }, 5000);
+        });
+    </script>
+</body>
+</html> 
